@@ -1,0 +1,1034 @@
+<!DOCTYPE html> 
+    <!-- <!DOCTYPE>: DEFINE EL TIPO DE DOCUMENTO // <html> : define un documento html // esto declara concretamente que es HTML 5-->
+<html>
+    <!--<html>:es la primera etiqueta que pondremos siempre despues de doctype y contiene toda la pagina-->
+    <head>
+        <style>
+            table, th, td
+            {
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+        <!--<head>:contiene metadatos/informacion sobre/para el documento-->
+        <p id="1p">
+            <!--<p>:el texto contenido es un mismmo parrafo(o mete un salto de parrafo)-->
+            Esto es el <b>head</b>.
+        </p>
+        <title>
+            Esto es el tittle de la pagina
+        </title>
+        <!--define el texto que se ve en la pestaña del navegador y va dentro de <head>, ojo que no acepta negritas y como pongas comentarios los pilla también-->
+        <meta name="encoding" charset="utf-8" />
+                <!--etiquetas <meta>: sirven para asociar informacion a los motores de busqueda y subir en el SEO(posicionamiento de busqueda)-->
+                <!--<meta name="description" content="Contenido(150 caracteres aconsejado)"/>: se puede indicar qué tipo de información va a contener la página web. -->
+                <!--<meta name="keywords" content="palabras clave"/>: permite indicar palabras clave para los motores de búsqueda. -->
+                <!--<meta name="author" content="nombre del autor"/>:se indica el autor de la web.-->
+                <!--<meta name="encoding" charset="utf-8" />: indica el conjunto de caracteres que usa la web, usar el utf-8, es el mas recomendado para que capte bien las tildes y otros caracteres-->
+        <meta name="author" content="Alberto Gonzalez"/>
+
+    </head> 
+    <body>
+        <!--<body>:define el cuerpo principal de la pagina, donde van la gran mayoria de etiquetas y funcionalidades de la pagina-->
+        <p>
+            Esto es el <b>body</b> de la pagina.
+        </p>
+        <p>
+            Dentro del un mismo <b>parrafo</b> en el body puede haber <b>negritas</b> y otros estilos (ejemplo de la etiqueta <b>"b"</b>)
+            <!--<b>:marca en negritas-->
+        </p>
+        <h3>
+            Pudiendo cambiar el tamanio del texto
+            <!--<h1 a h6>:cambia tamaño, esta pensado para encabezados (headings)-->
+        </h3>
+        <p> 
+            los <b>br</b> se usan <br>para hacer una ruptura de linea 
+        </p>
+            <!--<br>: lo pones donde quieres un salto de linea, no tiene cierre-->
+        <hr>
+             <!--<hr>:se usa para poner una linea donde quieras, dentro o fuera de parrafo, anidado, etc, etc...-->
+        <p>
+            los <b>hr</b> se usan para poner lineas 
+        </p>
+        <hr>
+        <img id="2p" src="mono.jpg" title="Mono dale que te dale Pohgramandoh" alt="mono POGRAHMANDOH" width="500"  height="200" >
+             <!-- <img>: etiqueta para crear un espacio para mostrar una imagen que esta en otro sitio/url/folder/etc-->
+             <!--alt: es un atributo de img, pone un texto cuando no se puede cargar la imagen y lo muestra-->
+             <!--width: es un atributo de img, especifica el ancho en pixeles que va a tener la imagen-->
+             <!--height: es un atributo de img, especifica el alto en pixeles que va a tener la imagen-->
+        <p>
+            deja el raton <b title="el atributo tittle permite reflejar mas informacion y  se usa con muchas etiquetas">aquí</b> para ver un ejemplo de <b>tittle</b>
+            <!--tittle: es un atributo que se usa en muchas etiquetas, vale para mostrar mas informacion al pasar el raton por encima-->
+        </p>
+        <p title="se puede usar el codigo html especifico de un caracter para mostralo (ej: & #33; para !) ">
+            <!--se puede usar el codigo html especifico de un caracter para mostralo (ej: &#33; para !) -->
+            Voy a mostrar el signo de admiración &#33; usando codigo HTML para representar un caracter
+        </p>
+        <p>
+            <!-- hay muchos simbolos además de los imputs de teclado, hasta emojis, hay listado en w3school, escoje numero y pon al comienzo "&#" + "el numero que sea" + ";" y tienes el emoji -->
+            &#9749; esto es un caracter html
+        </p>
+        <p>
+            Esto es otro caracter html cambiando su tamaño:
+        </p>
+        <p style="font-size:60px;">&#9749;</p>
+             <!--<style="font-size:XXpx;">: permite cambiar todo el tamaño de un parrafo (si lo metes en <p></p>) y obviamente se puede usar con emojis al ser estos un caracter-->
+        <div>
+            <!--permite agrupar varios elementos de bloque (párrafos, encabezados, listas, tablas, divisiones, etc). En principio, los navegadores no muestran nada especial cuando se crea una división, salvo que se dé formato a la división con la hoja de estilo.-->
+            <p>Ejemplo de <b>div</b> parrafo 1 de div 1 sin estilo</p>
+            <p>Ejemplo de <b>div</b> parrado 2 de div 1 sin estilo</p>
+        </div>
+        <div>
+            <p>Ejemplo de <b>div</b> parrafo 1 de div 2 sin estilo</p>
+            <p>Ejemplo de <b>div</b> parrafo 2 de div 2 sin estilo</p>
+        </div>
+        <p>
+            <b>A continuación un ejemplo de Blockquote:</b>
+        </p>
+        <blockquote>
+            <!--<blockquote>:permite incluir un texto «largo» que, a su vez, puede contener varios párrafos o, incluso, otras etiquetas. Como regla general, los navegadores suelen mostrar este bloque con un margen a izquierda y derecha. -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p> 
+            <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, <br>sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </blockquote>
+        <pre>
+            <!--<pre>:esta etiqueta se utiliza cuando se quiere mantener los espacios, tabuladores y diseño del texto original.-->
+             Este  texo, es un ejemplo
+            del uso de      la etiqueta
+            <b>pre</b>
+        </pre>
+        <span>
+            <!--<span>:no tiene un significado definido y se usa cuando no existe ninguna etiqueta adecuada. Se le suele asociar una clase en CSS para modificar su aspecto.-->
+            Este texto es un ejemplo de <b>span</b> sin usar CSS aún para marcarlo
+        </span>
+        <p>
+            Se puede <em>enfatizar partes del texto</em> con la etiqueta <b>"em"</b>
+            <!--<em>:nos permite enfatizar partes del texto. El estilo por defecto de los navegadores suele mostrar este texto en cursiva.-->
+        </p>
+        <p>
+            Se pueden marcar partes del texto con <em>strong</em>, <strong>para decir que esa parte del texto es importante</strong> dentro del parrafo
+            <!--<strong>: indica que el texto es importante y que lo quiero destacar con respecto al resto del párrafo. Tiene significado semántico. Normalmente el navegador lo muestra en negrita.-->
+        </p>
+        <p>
+            Ejemplo etiquieta "<b>sub</b>" para <sub>subíndice</sub>
+            <!--<sub>: define texto de subíndice. Texto de subíndice aparece mitad por debajo de la línea. Texto de subíndice puede utilizarse para fórmulas químicas, como la H2O.-->
+        </p>
+        <p>
+            Ejemplo etiqueta "<b>sup</b>" para <sup>superíndice</sup>
+            <!--<sup>: define texto de superíndice. Texto de superíndice aparece mitad por encima de la línea de base. Texto de superíndice se puede utilizar para las notas como si fuera una potencia, como WWW[ 1]. -->
+        </p>
+        <p>
+            Usamos la etiqueta "<b>s</b>" para señalas que algo está <s>bien</s> mal, o simplemente queremos <s>tacharlo</s>
+            <!--<s>: para tachar texto que quieras que aparezca tachado-->
+        </p>
+        <p>
+            Usamos la etiqueta "<b>i</b>" al decir por ejemplo la <i>Lactuca sativa</i> es una planta salvaje.
+            <!--<i>:representa texto en un modo o voz diferente, o desplazado de la prosa normal. Este elemento puede ser utilizado para etiquetar denominaciones taxonómicas, términos técnicos, frases idiomáticas de otras lenguas, transliteraciones, ideas, o nombres de navíos en textos occidentales.-->
+        </p>
+        <p>
+            Un ejemplo de la etiqueta "<b>small</b>" es decir que la camiseta de batman <small>100% algodon</small>, es mi favorita.
+            <!--<small>: se utiliza para indicar información que es secundaria y, por lo tanto, se suele mostrar en letra más pequeña en comparación al resto del párrafo.-->
+        </p>
+        <p>
+            La etiqueta "mark"permite <mark>resaltar</mark> como si usaras un rotulador amarillo (normalmente)
+            <!--<mark>: resalta texto. Normalmente en amarillo fluorescente por defecto segun el navegador. -->
+        </p>
+        <p>
+            <a href="https://i.chzbgr.com/full/9195092480/h7D7C3065/expression-we-find-the-bug-we-fix-the-bug-now-we-have-twobugs-now-we-have-three-bugs-imgflipcom">
+                Este
+            </a> hipervinculo creado con la etiqueta "<b>a</b>" te lleva a la verdad absoluta
+            <!--<a>: crea enlaces en HTML, usa el atributo (href="") para indicar la ruta del enlace, lo que se pone despues de la etiqueta de apertura es lo que muestra para acceder al hipervinculo-->
+        </p>
+        <p>
+            <a href="https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be8cf4ba7565123c8bc_YPD3ulQQAGQpOcnqIm3QzSTRgzmr1SexpW9ZjMpJ1mAnUxx4iF05XOTu44sk0qQG-8XgBcYmGZGAD-5SAZvJl3TjtmhgWnn-w0C2XKwhBscV78RVvhwZfyp0v_Pa6sNj5zxpOvRW.png">
+                <img src="https://previews.123rf.com/images/liliiakliliiakyrylenko/liliiakliliiakyrylenko1708/liliiakliliiakyrylenko170800007/83425188-enlaces-de-icono-o-hiperv%C3%ADnculos-vector-de-se%C3%B1al-de-internet-.jpg" alt="imagen_hipervinculo" width="70px" height="70px">
+                <!--Se puede usar una imagen como referencia para el hipervinculo, tras cerrar la etiqueta de apertura usar <img> y los atributos de este que necesites, despues cerrar la etiqueta </a>-->
+            </a>
+        </p>
+        <P>
+            Con la etiqueta <b>"a"</b> también puedes navegar, pulsa <b><a href="#1p">aquí</a></b> para ir al principio
+            <!--Se puede usar <a> para navegar por la pagina usando el atributo id="", primero le das el id a la etiqueta que quieres hacer scroll poiendole un nombre, luego cuando usas el <a> para poner el vinculo que haga scroll en href pones el id que has creado usando delante # -->
+        </P>
+        <p>
+            Con la etiqueta <b>"a"</b> tuedes usar el atributo <b>id=""</b> para navegar por la pagina en todo tipo de etiquetas, pulsa <b><a href="#2p">aquí</a></b> para navegar al mono
+            <!--puedes nombrar con un id cualquier etiqueta del tipo que sea, como por ejemplo una <img>-->
+            <!--Si queremos acceder a un elemento que se encuentre en otra página web, tendríamos que incluir la dirección URL de esa página web y luego la referencia con #. 
+                Por ejemplo: <a href=”www.empresa.com/indice.html#importante>
+                                Contenido importante
+                             </a>-->
+        </p>
+        <p>
+            Este <a href="https://www.google.es/" target="_blank">enlace</a> abre google en otra pestaña
+            <!--el atributo target="" marca como vas a abrir un enlace-->
+                <!--con _blank: abres en una pestaña nueva-->
+        </p>
+        <p>
+            Este <a href="https://www.google.es/" target="_self">enlace</a> abre google en la misma pestaña
+                <!--con _self: abres en la misma pestaña-->
+        </p>
+       <p>
+           <b>A continuación tipos de listas:</b>
+       </p>
+       <h3>
+           videojuegos nuevos a los que quiero jugar (lista ordenada)
+       </h3>
+       <ol>
+           <!--<ol>: Se usa para hacer listas ordenadas, dentro del <ol> usamos <li> para ir numerando cada entrada de la lista-->
+            <li>
+                <!--<li>: Se usa para meter entradas en una lista, si es ordenada cada entrada lleva un numero, si es no ordenada lo sustituye por "graficos", normalmente son puntos-->
+                <b>Elder Ring (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Metroid Dread (nintendo switch)</b>
+            </li>
+            <li>
+                <b>Lost Ark (pc)</b>
+            </li>
+            <li>
+                <b>Call of duty vanguard (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Ghost of Tsushima (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Spiderman Miles Morales's (ps5 ver.)</b>
+            </li>
+       </ol>
+       <h3>
+           videojuegos nuevos a los que quiero jugar (lista no ordenada) 
+       </h3>
+       <ul>
+           <!--<ul>: Se usa para hacer listas no ordenadas, usamos <li> para hacer entradas en dicha lista-->
+            <li>
+                 <b>Elder Ring (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Metroid Dread (nintendo switch)</b>
+            </li>
+            <li>
+                <b>Lost Ark (pc)</b>
+            </li>
+            <li>
+                <b>Call of duty vanguard (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Ghost of Tsushima (ps5 ver.)</b>
+            </li>
+            <li>
+                <b>Spiderman Miles Morales's (ps5 ver.)</b>
+            </li>
+       </ul>
+       <h3>
+           Lista de videojuegos definidos
+       </h3>
+       <dl>
+           <!--<dl>: Se usa para crear listas de definición, usamos <dt> (definition term) para hacer una entrada en la lista y <dd> (definition data) para definir o dar dato sobre la entrada-->
+           <dt>
+               <!--<dt>: crea una entrada en la lista de definición-->
+               <b>Elder Ring (ps5 ver.)</b>
+           </dt>
+           <dd>
+               <!--<dd>: define la entrada en la lista de definición-->
+               Action rpg, Dark Souls like.
+           </dd>
+           <dt>
+               <b>Metroid Dread (nintendo switch)</b>
+           </dt>
+           <dd>
+               Action game, metroidvania like
+           </dd>
+           <dt>
+                <b>Lost Ark (pc)</b>
+           </dt>
+           <dd>
+               Action mmorpg, Diablo like
+           </dd>
+           <dt>
+               <b>Call of duty vanguard (ps5 ver.)</b>
+           </dt>
+           <dd>
+               First person shooter
+           </dd>
+           <dt>
+               <b>Ghost of Tsushima (ps5 ver.)</b>
+           </dt>
+           <dd>
+               Action, exploration, BOTW & Assassins's Creed like
+           </dd>
+           <dt>
+               <b>Spiderman Miles Morales's (ps5 ver.)</b>
+           </dt>
+           <dd>
+               Action, exploration, Spiderman like
+           </dd>
+       </dl>
+       <h3>
+           Lista encadenada de operadoras de telefonia y sus sub-empresas (ordenada)
+           <!-- Se pueden encadenar listas para crear sub entradas dentro de las entradas, se hace anidando etiquetas de listas en las entradas que quieras extender-->
+       </h3>
+       <ol>
+           <li>
+               Movistar
+               <ol>
+                   <li>
+                       O<sup>2</sup>
+                   </li>
+               </ol>
+           </li>
+           <li>
+               Orange
+               <ol>
+                   <li>
+                       Jazztel
+                   </li>
+                   <li>
+                       Amena
+                   </li>
+                   <li>
+                       Simyo
+                   </li>
+               </ol>
+           </li>
+       </ol>
+       <h3>
+        Lista encadenada de operadoras de telefonia y sus sub-empresas (no ordenada)
+       </h3>
+       <ul>
+             <li>
+                Movistar
+                <ul>
+                    <li>
+                         O<sup>2</sup>
+                    </li>
+                </ul>
+            </li>
+            <li>
+             Orange
+                <ul>
+                     <li>
+                         Jazztel
+                     </li>
+                    <li>
+                        Amena
+                    </li>
+                    <li>
+                        Simyo
+                    </li>
+                </ul>
+            </li>
+       </ul>
+       <iframe src="C:\Users\larro\OneDrive\Escritorio\Modulo Berto\codigos\Pagina html para testear iframe1.html" frameborder="30" height="500px" width="1000px"></iframe>
+       <!--<iframe>: se usa para incrusta un documento html dentro de la pagina, se usa igual que la etiquet de imagenes, tiene los atributos de  src, height, width, etc. Se pueden anidar unos dentros de otros y es aquí donde resultan útiles algunos atributos de target usado en la etiqueta <a> para redireccionar contenido-->
+           <!--frameboder="": se usa para dar boder al marco del html incrustado-->
+           <!--src="": se usa de la misma manera que en la etiqueta <img>, marca la ruta de la web que vamos a incrustar-->
+           <!--MAS DESCRIPCIONES EN LA PAGINA DE TEST DE FRAMEWORK 1-->
+       <br>
+       <br>
+       <br>
+       <br>
+       <!--se puede usar <br> para formatear los estacios entre estructuras de la web-->
+       <hr>
+       <br>
+       <br>
+       <h2>Se puede incrustar un mapa en la web con una posicion determinada desde maps: ejemplo a MEDAC Sevilla</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.2956374052746!2d-5.935227184836988!3d37.40648657982826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12699b034c8463%3A0xe78091d604579c0c!2sMEDAC%20Sevilla!5e0!3m2!1ses!2ses!4v1637677286742!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!--se puede incrustar mapas desde google maps y te da la linea de codigo marcando el lugar especifico que mas seleccionado para que se vea en tu pagina-->
+        <br>
+        <br>
+       <hr>
+       <h3>
+            A continuacion tablas:
+       </h3>
+       <h4>
+           Tabla sin footer:
+       </h4>
+       <table>
+           <!--<table>: esta etiqueta crea una tabla, consta de tres partes <thead>, <tbody> y <tfoot>, con <tr> (table row (hilera)) creas filas que hay que rellenar con <td>(table data) que va creando coulmnas por cada uno que pongas en esa hilera -->
+           <caption>
+               <!--<caption>: se usa fuera de los grupos principales de la table y le da un titulo a la misma-->
+               Trabajadores inventados
+           </caption>
+           <thead>
+               <!--<thead>: crea la hilera que será la cabecera de la tabla, en lugar de <td>(table data) para crear celdas/columnas se suele usar <th>(table header), crea celdas/columnas de la misma manera PERO el contenido aparece resaltado-->
+               <tr>
+                   <!--<tr>(table row(hilera)): Marca que se va a crear una fila/hilera, dentro hay que ir rellenando con tantos <td>(table data) o <th>(table header) como celdas/columnas se quieran ir creando en dicha hilera-->
+                   <th>
+                       <!--<th>: crea una celda/columna dentro de una fila/hilera, a diferencia de <td>(table data) con esta etiqueta el contenido aparece resaltado, esta etiqueta se suele usar en el <thead> pero realmente lo puedes usar a conveniencia donde te venga mejor-->
+                       Nombre
+                   </th>
+                   <th>
+                       Primer Apellido
+                   </th>
+                   <th>
+                       segundo Apellido
+                   </th>
+                   <th>
+                       Número de contacto
+                   </th>
+               </tr>
+           </thead>
+           <tbody>
+               <!--<tbody>: Marca el cuerpo principal de la tabla, mientras que el <thead> solo se usa un único <tr>, aquí habrá tantos <tr> como filas/hileras sea necesario para llenar la información de la tabla-->
+               <tr>
+                   <td>
+                       <!--<td>(table data): crea celdas/columnas dentro de un <tr>(table row(hilera)), el contenido de dicha celda aparece sin modificacion alguna por defecto-->
+                       Peter
+                   </td>
+                   <td>
+                       Parker
+                   </td>
+                   <td>
+                       Petrelly
+                   </td>
+                   <td>
+                       666666661
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       Carlos
+                   </td>
+                   <td>
+                       Costanza
+                   </td>
+                   <td>
+                       Costero
+                   </td>
+                   <td>
+                       666666662
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       Miguel
+                   </td>
+                   <td>
+                       Moreno
+                   </td>
+                   <td>
+                       Mañanero
+                   </td>
+                   <td>
+                       666666663
+                   </td>
+               </tr>
+           </tbody>
+        </table>
+        <h4>
+            Tabla con footer:
+        </h4>
+        <table>
+            <caption>
+                lista de lapices
+            </caption>
+            <thead>
+                <tr>
+                    <th>
+                        Marca
+                    </th>
+                    <th>
+                        color
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Carioca
+                    </td>
+                    <td>
+                        Rojo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        bowtow
+                    </td>
+                    <td>
+                        Amarillo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alpino
+                    </td>
+                    <td>
+                        Verde
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!--<tfoot> se usa para marcar la parte ultima de una tabla, visualmente si no le haces nada no conlleva nada, pero para estilos, busquedas y demas es util marcarlo-->
+                <th>
+                    Total de lapices
+                </th>
+                <th>
+                    3
+                </th>
+            </tfoot>
+        </table>
+        <h4>
+            Usos del "colgroup" y del "col"
+        </h4>
+        <table>
+            <colgroup>
+            <!--<colgroup>:Esta etiqueta se usa para hacer modificaciones en tablas, pintarlas basicamente, va dentro de <table> el solo normalmente antes de empezar siquiera el <thead>, se usa la etiqueta <col> para hacer entradas y especificar los cambios en las columnas segun el atributo que le pongas al <col>-->
+              <col span="2" style="background-color:red">
+              <!--<col>: Se usa para hacer entradas en colgroup y especificar los cambios en las comlumnas segun el atributo que les pongas-->
+              <!--span=""(lapso): este atributo señala la cantidad de columnas sobre las que quieres aplicar un efecto -->
+              <!--style="": este atributo si lo usas sin mas en un colgroup marca todas las columnas con el estilo (o color) que sea, salvo las que hallas marcado con span -->
+              <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+              <th>
+                  numero ejemplo
+              </th>
+              <th>
+                  titulo ejemplo
+              </th>
+              <th>
+                  precio ejemplo
+              </th>
+            </tr>
+            <tr>
+              <td>
+                  3476896
+              </td>
+              <td>
+                  Jibiri Jibiri
+              </td>
+              <td>
+                  1939 €
+              </td>
+            </tr>
+        </table>
+        <h4>
+            Uso del colspan(lapso columna) y rowspan(lapso hilera)
+            <!--al usar los atributos colspan y rowspan prevalece/tiene dominancia el que se codifica primero sobre el segundo,
+                ya que tiene encuenta el orden de codificacion siempre, se puede ampliar tambien alguna celda en mitad de una tabla-->
+        </h4>
+        <table>
+            <tr>
+                <th colspan="3">
+                    <!--colspan="": Este atributo define el numero de columnas que una celda debe tener de lapso (cuanto se expande)
+                        si le das valor 0 al atributo se extiende hasta la ultima columna posible de la tabla -->
+                    Precios De Lapices
+                </th>
+            </tr>
+            <tr>
+                <th rowspan="5">
+                    <!--rowspan="": Este atributo especifica el numero de hileras que una celda debe tener de lapso (cuanto se expande), 
+                        si le das valor 0 al atributo se extiende hasta la ultima hilera posible de la tabla, por algun motivo que desconozco
+                        si cuentas el numero de hileras que quieres expandir siempre hay que sumar uno mas... no se si por que se cuenta 
+                        a si mismo o por que, almenos en este ejemplo.. pero con colspan eso no pasa-->
+                    Lapices Analizados
+                </th>
+            </tr>            
+            <tr>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Precio
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Alpino
+                </td>
+                <td>
+                    2€
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Carioca
+                </td>
+                <td>
+                    1€
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Promedio
+                </th>
+                <th>
+                    1,5€
+                </th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h2>
+            Formularios
+        </h2>
+        <p>
+            <b>Ejemplo de uno basico:</b>
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <form action="recepcionformulario.php" method="post">
+                        <!--<form>: Es la etiqueta principal sobre la que construir formularios, contiene todas las demas etiquetas y atributos para hacer todo tipo de controles para formularios, tambien puede contener elemento html-->
+                            <!--action="": Este atributo marca hacia donde se van a enviar los datos del formulario, suele ser una página web dinámica que contendrá un script con un lenguaje de programación del lado del servidor, como podría ser PHP -->
+                            <!--method="": Este atributo marca la manera en la que se van a enviar los datospueden ser de 2 tipos: get y post-->
+                                <!--"post": Este valor del atributo method="" marca que la información del formulario se manda oculta y no se puede ver en la url que se envia al destino con los datos del formulario-->
+                                <!--"get": Este valor del atributo method="" marca que la inforación del formulario NO se manda oculta y se puede ver en la url que se envia al destino con los datos del formulario, en dicha url despues del destino hace division con el signo "?" seguido de los datos recopilados, y entre dato y dato se usa & para ir enlazando-->
+                        Nombre: <input type="text" name="nombre" value="Introduzca Nombre">
+                            <!--<input>: Esta etiqueta marca la entrada de un control dentro del formulario, estos varian dependiendo del atributo usado en el <input> y sus valores, existen muchos tipos distintos y cada uno con distintas funciones-->
+                                <!--type="": Este atributo marca el tipo de control, dependera del valor que se use, el cual, determinara dicho tipo, existen muchos valores distintos y cada uno con una función determinada-->
+                                    <!--"text": Este valor del atributo type="" crea un control de caja de texto alfanumerica que recoje lo que le pongas-->
+                                <!--name="": Este atributo identifica al control de una manera única, les da un nombre que se puede usar para identificar el control, o hacer distincion entre los valores que el formulario pueda recoger por ejemplo.-->
+                                <!--value="": Este atributo permite dar un valor inicial al control, o por ejemplo, que si se marca el control en el formulario, devuelva el valor escrito en value=""-->
+                        <p>
+                        <input type="radio" name="sexo" value="H">Hombre
+                            <!--"radio": Este valor del atributo type="" genera un boton circular que se puede marcar o no, si esta marcado es true y puede generar lo que tengas en atributo value=""-->
+                            <!--Atributo value="" usado con valor "radio": Si no se indica un valor con el atributo value se enviaría el valor on. En caso contrario se enviaría el valor que se haya indicado en value. Si no se marca la casilla no se enviaría nada.-->
+                        <input type="radio" name="sexo" value="M">Mujer
+                        </p>
+                        <input type="submit" value="Enviar">
+                            <!--"submit": Este valor del atributo type="" crea un botón con la funcion de enviar los datos recogidos por los controles del formulario-->
+                            <!--En el valor del atributo en value="" para el type="submit" lo que hace es ponerle texto al boton de enviar-->
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <mark>
+                (Hace difereciación entre las dos opciones por que tienen el mismo atributo name="")
+            </mark>
+        </p>
+        <p>
+            <b>Ejemplo con mas botones y formato:</b>
+        </p>
+        <form action="recepcionformulario.php" method="post">
+            <fieldset>
+            <!--<fieldset>: Esta etiueta permite agrupar controles, se usa dentro del formulario en cuestion. En el navegador se mostrarán rodeados con una línea y se mostrará el título que le demos a ese grupo de controles. Como primera etiqueta que hay que incluir en el grupo es <legend> que dará el título al grupo de controles.-->
+                <legend>
+                <!--<legend>: Esta etiqueta genera el titulo que se muestra al usar <fielset> para agrupar un determinado grupo de controles, el texto de titulo va entre las etiquetas de apertura y cierre-->
+                    ¿Que te gusta más de postre?
+                </legend>
+                <input type="radio" name="postre" value="fruta">Fruta <br>
+                <input type="radio" name="postre" value="gelatina">Gelatina <br>
+                <input type="radio" name="postre" value="yogut">Yogurt <br>
+                <input type="radio" name="postre" value="Tarta" checked>Tarta de Chocolate
+                    <!--checked: Este atributo nos indica si inicialmente el radio se desea que esté marcado. En este caso no es necesario seguir la sintaxis atributo=valor. Si queremos que esté marcada la casilla se indica simplemente escribiendo checked.-->
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Marca los generos de videojuegos que te gusten:
+                </legend>
+                <input type="radio" name="juego1" value="JRPG">JRPG
+                <input type="radio" name="juego2" value="Action">Action
+                <input type="radio" name="juego3" value="ARPG">ARPG <br>
+                <input type="radio" name="juego4" value="Conduccion">Conducción
+                <input type="radio" name="juego5" value="Estrategia">Estrategia
+                <input type="radio" name="juego6" value="FPS">FPS
+            </fieldset>
+                <p>
+                    <input type="reset" value="Borrar Seleccion">
+                        <!--"reset": Este valor del atributo type="" crear un boton con la funcion de borrar todo lo marcado en los controles del formulario-->
+                        <!--En valor de atributo en value="" para el type="reset" lo que hace es ponerle nombre al botón de reset-->
+                    <input type="submit" value="Enviar">
+                        <!--"submit": Este valor del atributo type="" crea un botón con la funcion de enviar los datos recogidos por los controles del formulario-->
+                        <!--En el valor del atributo en value="" para el type="submit" lo que hace es ponerle texto al boton de enviar-->
+                    <input type="button" value="Pincha para chiste muy malo" onclick="alert('Van dos y se cae el del medio... Te dije que era malo...')">
+                        <!--"button": Este valor del atributo type="" crea un boton sin funcion especifica de entrada, se le asigna alguna funcion con algun scrip de otro leguaje, normalmente javascrip-->
+                        <!--En el valor del atributo en value="" para el type="button" lo que hace es ponerle texto al boton creado-->
+                        <!--onclick="alert('')": es un pequeño scrip que genera un mensaje de alerta al pulsar el control, lo que escribes en las comillas dentro del parentesis es el contenido del mensaje de alerta-->
+                </p>
+        </form>
+        <p>
+            <b>
+                Ejemplo Cajas de Texto basico: <br>
+                (uso del <mark>get</mark> para ver la <mark>falla de seguridad</mark> al enviar información en passwords)<br> 
+                (para ver uso del autofocus ver comments de este apartado)
+                    <!--autofocus="autofocus": Este atributo y su mismo valor literalmente crea el foco allá donde lo pongas, al abrir la pagina sale directamente con el scroll donde este la etiqueta con el foco, ademas si es un control de un formulario sale seleccionado por defecto, sea un boton  o sea una caja de texto-->
+            </b>
+        </p>
+        <form action="recepcionformulario.php" method="get">
+            <fieldset>
+                <legend>
+                    Ejemplo controles de texto
+                </legend>
+                Usuario: <input type="text" name="User" value="User"><br>
+                Contraseña: <input type="password" name="Pass" minlength="8" maxlength="16"><br>
+                    <!--minlenght="": Este atributo especifica el minimo de caracteres que se debe rellenar en la caja de texto-->
+                    <!--maxlenght="": Este atributo especifica el maximo de caracteres que se debe rellenar en la caja de texto-->
+                        <!--"password": Este valor de atributo type="" crea un tipo de caja de texto especial, en la que al escribir aparecen caracteres tipo * que ocultan el texto, haciendo que este control se usea para salvaguardar la seguridad de la informacion intruducida-->
+                Escriba breve reseña: <br> 
+                <textarea name="reseña" cols="30" rows="5"></textarea>
+                <!--<textarea>: Esta etiqueta crea un control que nos va a permitir introducir mas de una linea de texto-->
+                    <!--cols="": Este atributo especifica el numero inicial de columnas que se muesta al abrir la pagina (porque se pueden ampliar si arrastramos la esquina inferior derecha de la caja de texto.)-->
+                    <!--rows="": Este atributo especifica el numero inicial de hileras que se muestra al abrir la pagina (porque se pueden ampliar si arrastramos la esquina inferior derecha de la caja de texto.)-->
+            </fieldset>
+            <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+        <p>
+            <b>
+                Ejemplo de checkbox (usando get para ver funcionamiento al enviar):
+            </b>
+        </p> 
+        <form action="recepcionformulario.php" method="get">
+            <fieldset>
+                <legend>
+                    Responda según corresponda
+                </legend>
+                <input type="checkbox" name="caja1" value="Dice ser humano" checked>Soy humanito no más wey <br>
+                    <!--value="" al usar checkbox : Si no se indica un valor con el atributo value se enviaría el valor on. En caso contrario se enviaría el valor que se haya indicado en value. Si no se marca la casilla no se enviaría nada. -->
+                    <!--checked: Este atributo indica si inicialmente el checkbox se desea que esté marcado. En este caso no es necesario seguir la sintaxis atributo=valor. Si queremos que esté marcada la casilla se indica simplemente escribiendo checked.-->
+                        <!--"checkbox": Este valor de atributo type="" crea casillas de verificación que se pueden marcar y desmarcar-->
+                <input type="checkbox" name="caja2">Me gusta la tortilla sin cebolla <br>
+                <input type="checkbox" name="caja3">Me gusta la tortilla con cebolla <br>
+                <input type="checkbox" name="caja4">Soy un Monstruo y me gusta la pizza con aguacate
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>
+            <b>
+                Ejemplo de desplegables
+            </b> 
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <form action="recepcionformulario.php" method="get">
+                        Hoy me siento
+                        <select name="desplegable1" size="1">
+                        <!--<select>: Esta etiqueta crea un control en forma de lista desplegable, las opciones se tienen que colocar dentro de <select> y se indican con la etiqueta <option>.-->
+                            <!--size="": Este atributo en la etiqueta <select> dice cuantas de las opciones del desplegable se muestran sin necesidad de hacer scroll-->
+                            <option value="genial">
+                            <!--<option>: Esta etiqueta se usa dentro de <select> para crear una de las opciones del desplegable, entre la etiqueta de apertura y cierre hay que poner el texto que se muestra como opción-->
+                                <!--Atributo value: Se asocia a la etiqueta <option> e indica el valor de la opción seleccionada.-->
+                                Genial
+                            </option>
+                            <option value="meh">
+                                Meh
+                            </option>
+                            <option value="outrageous" selected>
+                                <!--Atributo selected: Se asocia a la etiqueta <option> e indica la opción seleccionada por defecto.-->
+                                Escandaloso
+                            </option>
+                            <option value="mal">
+                                Mal
+                            </option>
+                            <option value="enfadado">
+                                Enfadado
+                            </option>
+                            <option value="wtf">
+                                El hornitorrinco es un mamifero palmido, ovíparo, semiacuático.
+                            </option>
+                        </select>
+                        <input type="submit" value="Enviar feelings">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h2>
+            Modelo de organizacion web en HTML 5
+        </h2>
+        <h3>
+            para ver mas a fondo revisa comentarios de codigo fuente de la pagina
+        </h3>
+        <iframe src="C:\Users\larro\OneDrive\Escritorio\Modulo Berto\codigos\Modelo organizativo de html5 sin CSS.html" frameborder="30" height="500" width="600"></iframe>
+        <br>
+        <br>
+        <h1>
+            Nuevos elementos de formularios en HTML5
+        </h1>
+        <h2>
+            Imputs mas importantes nuevos:
+        </h2>
+        <form action="recepcionformulario.php" method="get" autocomplete="on">
+            <!--autocomplete="": este atributo se usa en <form> e <input>, habilita la funcion de autocompletado del navegador, si lo pones en <form> activo ("on") afecta a todos los controles contenidos, luego puedes especificar en algun <input> con el valor "off" si quieres que para ese en concreto NO se aplique-->
+            <fieldset>
+                <legend>
+                    Formulario de prueba para nuevos inputs y atributos
+                </legend>
+                <br>
+                <br>
+                <label for="email1">
+                <!--<label>: esta etiqueta se usa en formularios para ponerle texto o descripción a los controles, se especifica en la etiqueta de apertura el id="" del <input> al que se le pone el texto, se usa <label> en lugar de escribir texto normal con parrafos o a secas por temas de accesibilidad, con estas etiquetas la pagina es mas accesible para invidentes y lectura via software para discapacidad visual, es mas correcto hacerlo así-->
+                    Correo electronico:
+                </label>
+                <input type="email" id="email1" placeholder="introducemail@dominio.com">
+                <!--placeholder="": este atributo crea un texto de ayuda en el propio campo que desaparece cuando empezamos a escribir algo. El texto de ayuda va entre ""-->
+                    <!--"email": este valor del atributo type="" crea un control para escribir emails, no va a permitir enviar el formulario si la dirección de correo electrónico no es correcta-->
+                <br>
+                <br>
+                <label for="url1">
+                    Introduce una URL:
+                </label>
+               <input type="url" id="url1" placeholder="introduce una url válida">
+                    <!--"url": este valor del atributo type="" crea un control para introducir URLs, no va a permitir enviar el formulario si la dirección url no es correcta.-->
+                <br>
+                <br>
+                <label for="date1">
+                    Introduce una URL:
+                </label>
+                <input type="date" id="date1">
+                    <!--"date": este valor del atributo type="" crea un control para introducir una fecha, muestra un calendario para elegir fecha.-->
+                <br>
+                <br>
+                <label for="time1">
+                    Introduce una hora:
+                </label>
+                <input type="time" id="time1">
+                    <!--"time": este valor del atributo type="" crea un control para introducir hora en formato 24 horas.-->
+                <br>
+                <br>
+                <label for="dyh1">
+                    Introduce Día y Hora:
+                </label> 
+                <input type="datetime-local" name="diayhorafom1" id="dyh1">
+                    <!--"datetime-local": este valor del atributo type="" crea un control para introducir dia y hora concreta-->
+                <br>
+                <br>
+                <label for="number1">
+                    Introduce un numero del 0 al 5:
+                </label>
+                <input type="number" id="number1" min="0" max="5" autocomplete="off">
+                    <!--autocomplete="off": indica que en este input en concreto NO se aplica el autocompletar del formulario-->
+                    <!--min="": este atributo establece el valor minimo en este control-->
+                    <!--max="": este atributo establece el valor maximo en este control-->
+                        <!--"number": este valor del atribut type="" crea un control que comprueba que el dato introducido sea un número.-->
+                <br>
+                <br>
+                <label for="range1">
+                    Introduce cuanto te gustaria cobrar al mes (min 2500€ max 6000€):
+                </label>
+                <input type="range" id="range1" min="2500" max="6000" value="2500">
+                    <!--value="": el atributo value="" en el contexto del valor tipo "range" para la posicion inicial al cargar la pagina de la barra deslizante-->
+                        <!--"range": este valor del atributo type="" crea un control deslizante que nos permitirá elegir un valor-->
+                <br>
+                <br>
+                <label for="color1">
+                    Introduce un color
+                </label>
+                <input type="color" id="color1">
+                    <!--"color": este valor del atributo type="" crea un control para seleccionar un color-->
+                <br>
+                <br>
+                <label for="desp1">
+                    Puedes seleccionar mas de 1 opcion de este desplegable dejando pulsando <b>CTRL</b>:
+                </label>
+                <select name="desplegablemultiple" id="desp1" size="4" multiple>
+                    <!--multiple: este atributo permite seleccionar varias opciones pulsando crtl, se puede usar no solo en desplegables-->
+                    <option value="patata">
+                        patata
+                    </option>
+                    <option value="tomate">
+                        tomate
+                    </option>
+                    <option value="chorizo">
+                        chorizo
+                    </option>
+                    <option value="butano">
+                        bombona de butano
+                    </option>
+                    <option value="cascos">
+                        cascos
+                    </option>
+                    <option value="pepino">
+                        pepino
+                    </option>
+                    <option value="zanahoria">
+                        zanahoria
+                    </option>
+                    <option value="poppings">
+                        Mery Poppings
+                    </option>
+                    <option value="ultimaopcion">
+                        ultima opción
+                    </option>
+                </select>
+                <br>
+                <br>
+                <label for="incremento1">
+                    Indica los puntos que tu equipo de baloncesto ha ganado encestando solo con tiros triples:
+                </label>
+                <input type="number" min="0" max="9999" step="3">
+                    <!--step="": este atributo se usa para marcar intervalos "legales", junto con los atributos max y min puedes marcar un rago de intervalos concreto, por "legales" nos referimos a que solo son opciones validas en el control los numeros o datos comprendidos en dicho incremento o decrecimiento marcado por step-->
+                <br>
+                <br>
+                <label for="pattern1">
+                    Introduce un código de país de 3 letras (ejemplo USA)(uso del pattern):
+                </label>
+                <input type="text" name="codigo_pais" pattern="[A-Za-z]{3}" title="Escribe 3 letras">
+                    <!--pattern="": este atributo especifica unas expresiones regulares o patrones que el input debe revisar para que el valor del control sea válido, las expresiones regulares son muchas y variadas mirar en w3school o googlearlas cuando las quieras usar, yo pongo un par de ejemplos solo-->
+                <br>
+                <br>
+                <label for="pattern2">
+                    Introduce un password (segundo ejemplo pattern):
+                </label>
+                <input type="password" name="passwordpattern" id="pattern2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="debe contener 8 o mas caracteres, 1 numero, 1 mayuscula y 1 minuscula al menos">
+                    <!-- otro ejemplo de pattern="" mas complejo, para ver como funcionan las expresiones regulares buscar en internet-->
+                <br>
+                <br>
+                <label for="progress1">
+                    Progreso de la descarga:
+                </label>
+                <progress id="progress1" value="32" max="100">
+                <!--<progress>: esta etiqueta marca el GRADO DE FINALIZACION de un TAREA, se usa solo y exclusivamente para decir la CONSECUCION de una TAREA, NO MIDE NADA MAS, ni espacio en disco duro ni nada mas que no sea cuanto le queda a una tarea. Se puede usar junto con javascrip para mostrar el progreso REAL de una tarea como por ejemplo una descarga.-->
+                    <!--max="": marca el maximo valor de la barra (aunque solo sea una representacion grafica), por defecto el minimo es siempre 0-->
+                    <!--value="": para la etiqueta progress, el atributo value="" marca el grado exacto de consecucion en el que se encuentra la barra de progreso-->
+                    32%
+                        <!--lo que marcas entre etiqueta de apertura y cierre en progress es mas bien para temas de accesibilidad, para que cuando vea la pagina un invidente le diga lo que hay, ya que lo que escribas aqui no se va a visualizar en el navegador-->
+                </progress>
+                <br>
+                <br>
+                <label for="disk_c">
+                    Disco Duro C: usado:
+                </label>
+                <meter id="disk_c" value="2" min="0" max="10">
+                <!--<meter>: esta etiqueta sirbe para crear un control grafico para medir algo dentro de un rango conocido, por ejemplo el espacio ocupado en un disco duro, esta etiqueta NUNCA debe indicar el progreso de algo, si no se marca el maximo y el minimo, el maximo es el 1 y el minimo el 0-->
+                    <!--value="": para esta etiqueta muestra el valor en el que se encuentra lo medido-->
+                    <!--min="" y max="": marcan el valor minimo y maximo de lo que se mide, en este control (meter) por defecto el minimo es 0 y el maximo 1-->
+                    2 sobre 10
+                        <!-- Igual que con <progress> -->
+                        <!-- Hay muchos atributos concretos para representar la grafica, mirar aqui https://www.w3schools.com/tags/tag_meter.asp-->
+                </meter>
+                <br>
+                <br>
+                <label for="disk_d">
+                    Disco Duro D: usado:
+                </label>
+                <meter id="disk_d" value="0.6">
+                    60%
+                </meter>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <label for="audio1">
+            <b>
+                Ejemplo de audio:
+            </b>
+        </label>
+        <br>
+        <br>
+        <audio controls id="audio1" loop preload="none">
+        <!--<audio>: esta etiqueta crea un reproductor de audio en la pagina que carga un audio indicado por src en la sub etiqueta source-->
+            <!--controls: este atributo le da al audio controles de play/pause/columen... sin el a no ser que este en autoplay no se escucharia ni veria nada-->
+            <!--loop: este atributo hace que al terminar se repita en loop-->
+            <!--preload="": este atributo define si el audio se carca junto con la pagina al iniciar o para que cargue darle al play antes, si pones el valor "none" no precarga, pero si lo pones sin un valor hace la precarga-->
+            <source src="Evangelion.mp3" type="audio/mpeg">
+            <!--<source>: este atributo es usado especificamente para recursos multimedia como <audio>, <video> o <picture>, permite especificar archivos de video/audio/imagenes alternativos que puedan ser soportados por otros navegadores, el propio navegador escogere el primero con el que sea compatible-->
+                <!--scr:"": este atribuyo marca la ruta que tiene que seguir el navegador para cargar el audio-->
+                <!--type="": este atributo especifica el formato de audio que se carga, para mp3 es audio/mpeg -->
+            Tu navegador no soporta este formato
+            <!-- este texto es solo para cuando el navegador es incompatible con el fotmato del audio-->
+        </audio>
+        <br>
+        <br>
+        <label for="v1">
+            <b>
+                Ejemplo video:
+            </b>
+        </label>
+        <br>
+        <br>
+        <video id="v1" controls loop muted autoplay width="500" height="700" poster="video1.mp4">
+            <!--autoplay: este atributo hace que el video se inicie al cargar la pagina-->
+            <!--muted: este atributo hace que el video se reproduzca sin sonido-->
+            <!--width & height: estas atributos controlan el ancho y el alto del video-->
+            <!--poster="": este atributo muestra una imagen previa en el video ANTES de darle al play para reproducir, puede ser el primer fotograma del propio video O PUEDE ser una imagen cualquiera, hay que especificarle la ruta de la imagen que quieres mostrar o como en el ejemplo el propio video para el primer fotograma-->
+            <source src="video1.mp4" type="video/mp4">
+                <!--type="video/mp4": este atributo con el valor video/mp4 especifica el format de video que el navegador va a coger, se pueden poner varios souces con varios videos en distintos formatos para que el navegador coja el primero con el que sea compatible, el valor video/mp4 es el concreto para videos en mp4-->
+            Tu navegador no soporta este formato
+        </video>
+        <br>
+        <br>
+        <label for="fig">
+            <b>
+                Ejemplo de figure y figcaption
+            </b>
+        </label>
+        <figure id="fig1">
+        <!--<figure<: esta etiqueta presenta una imagen con una descripcion concreta, este elemento puede colocarse en la pagina en cualquier parte, con css se puede toquetear mucho y demaneras muy bariadas la representacion y el estilo de las fotos -->
+            <img src="perro1.jpg" alt="perrete" width="450" height="300">
+            <figcaption>
+            <!--<figcaption>: esta etiqueta se usa con <figure> lo que contenga es la descripcion de la imagen que se muestra-->
+                Ejemplo figcaption 
+            </figcaption>
+        </figure>
+        <br>
+        <br>
+        <h2>
+            <b>
+                Elementos interactivos
+            </b>
+        </h2>
+        <h3>
+            <b>
+                &#60;details&#62; :
+            </b>
+        </h3>
+        <details>
+        <!--<details>: esta etiqueta crea un elemento interactivo, oculta cierta informacion, archivo de audio, video, etc... hasta que pulsas u lo muestra, hasta entonces solo muestra lo que indiques en la sub-etiqueta <summary>-->
+            <summary>
+            <!--<summary<: esta etiqueta se usa dentro de <details>, se usa para mostrar parte del contenido que quieres mientras que el resto esta escondido-->
+                ¿Que bebida es la mejor con diferencia?
+            </summary>
+            Obviamente el café &#9749;
+        </details>
+        <br>
+        <br>
+        <details>
+            <summary>
+                Ejemplo de desplegable interactivo con video
+            </summary>
+            <video controls loop width="300" height="500" muted>
+                <source src="video1.mp4" type="video/mp4">
+                no compatible
+            </video>
+        </details>
+        <br>
+        <br>
+        <details>
+            <summary>
+                Ejemplo de desplegable interactivo con audio
+            </summary>
+            <audio controls loop >
+                <source src="Evangelion.mp3" type="audio/mpeg">
+                no compatible
+            </audio>
+        </details>
+        <br>
+        <br>
+        <details open>
+                <!--open: este atributo de <details> hace que al cargar la pagina ya se encuentre desplegada la informacion/multimedia-->
+            <summary>
+                Ejemplo de desplegable interactivo con imagen (usando figure) desplegado al cargar pagina directamente
+            </summary>
+            <figure>
+                <img src="perro1.jpg" alt="aylosperretes" width="450" height="300">
+                <figcaption>
+                    Gran perrete, mejor persona.
+                </figcaption>
+            </figure>
+        </details>
+        <br>
+        <br>
+
+       
+
+
+
+
+    </body> 
+
+</html>
