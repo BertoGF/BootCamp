@@ -1,0 +1,18 @@
+<!DOCTYPE html - LARA> 
+    <!-- <!DOCTYPE>: DEFINE EL TIPO DE DOCUMENTO // <html> : define un documento html // esto declara concretamente que es HTML 5-->
+<html>
+    <!--<html>:es la primera etiqueta que pondremos siempre despues de doctype y contiene toda la pagina-->
+    <head>
+        <style>
+            table, th, td
+            {
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+        <!--<head>:contiene metadatos/informacion sobre/para el documento-->
+        <p id="1p">
+            <!--<p>:el texto contenido es un mismmo parrafo(o mete un salto de parrafo)-->
+            Esto es el <b>head</b>.
+        </p>
+        <title>
