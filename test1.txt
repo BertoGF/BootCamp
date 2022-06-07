@@ -1,4 +1,4 @@
-<!DOCTYPE html - LARA is awesome 2> 
+<!DOCTYPE html - LARA is awesome 22> 
     <!-- <!DOCTYPE>: DEFINE EL TIPO DE DOCUMENTO // <html> : define un documento html // esto declara concretamente que es HTML 5-->
 <html>
     <!--<html>:es la primera etiqueta que pondremos siempre despues de doctype y contiene toda la pagina-->
